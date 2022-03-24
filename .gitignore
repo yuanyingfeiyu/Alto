@@ -5,3 +5,4 @@ node_modules
 .editorconfig
 assets/css/screen.css
 assets/js/main.min.js
+yarn-error.log
