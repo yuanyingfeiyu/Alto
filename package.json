@@ -40,6 +40,29 @@
         },
         "card_assets": true,
         "custom": {
+            "home_cover_image1": {
+                "type": "image"
+            },
+            "home_cover_image2": {
+                "type": "image"
+            },
+            "home_cover_image3": {
+                "type": "image"
+            },
+            "home_cover_image4": {
+                "type": "image"
+            },
+            "home_cover_image5": {
+                "type": "image"
+            },
+            "main_title": {
+                "type": "text",
+                "default": "The Adventure Stroies of"
+            },
+            "sub_title": {
+                "type": "text",
+                "default": "Dot Photography"
+            },
             "title_font": {
                 "type": "select",
                 "options": ["Modern sans-serif", "Elegant serif"],

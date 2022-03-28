@@ -1,0 +1,163 @@
+.home-template {
+    background-color: rgb(40 44 53);
+}
+
+.home-top-logo {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    justify-content: center;
+}
+
+.home-top-logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.home-content {
+    position: absolute;
+    top: 36%;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.home-content h1, h2 {
+    color: var(--white-color);
+    line-height: 60px;
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: 15px;
+    font-size: 2em;
+}
+
+/* override the css style comes from ghost theme */
+.home-template .menu-item-link {
+    color: var(--white-color);
+}
+
+.home-template .nav-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.home-template .menu-item {
+    margin-top: 5px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Mulish', sans-serif;
+    letter-spacing: 3px;
+}
+
+.home-template .home-footer {
+    position: absolute;
+    bottom: 8%;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 35px;
+}
+
+.home-template .home-footer .nav-list {
+    flex-direction: row;
+}
+
+.home-template .home-footer .menu-item i {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-size: 25px;
+    color: var(--white-color);
+}
+
+.swiper-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.swiper-container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper {
+    height: 100%;
+}
+
+.swiper-container .swiper-pagination-bullet {
+    background-color: rgb(255, 255, 255);
+}
+
+@media screen and (orientation:portrait) {
+    .home-content {
+    }
+
+    .home-content h1, h2 {
+        line-height: 80px;
+    }
+
+    .home-nav ul {
+        flex-direction: column;
+    }
+
+    .home-template .home-footer {
+        position: absolute;
+        bottom: 6%;
+    }
+}
+
+@media (max-width: 565px) {
+    .home-top-logo {
+        margin-top: 3%;
+        height: 40px;
+        letter-spacing: 3px;
+    }
+
+    .home-content h1, h2 {
+        line-height: 40px;
+        font-size: 1em;
+    }
+
+    .home-template .nav-list {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .home-template .menu-item {
+        height: 25px;
+        font-size: 12px;
+        font-weight: 400;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-family: 'Mulish', sans-serif;
+        letter-spacing: 3px;
+    }
+
+    .home-content {
+        top: 26%;
+    }
+
+    .home-template .home-footer .menu-item i {
+        font-size: 19px;
+    }
+}
