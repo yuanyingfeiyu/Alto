@@ -35,6 +35,14 @@
     font-size: 2em;
 }
 
+.home-nav .nav-list .menu-item {
+    font-size: 16px;
+}
+
+.home-nav .nav-list li:first-of-type {
+    display: none;
+}
+
 /* override the css style comes from ghost theme */
 .home-template .menu-item-link {
     color: var(--white-color);
@@ -50,6 +58,7 @@
 
 .home-template .menu-item {
     margin-top: 5px;
+    margin-bottom: 5px;
     height: 30px;
     font-size: 16px;
     font-weight: 400;
@@ -116,6 +125,12 @@
         flex-direction: column;
     }
 
+    .home-nav .nav-list .menu-item {
+        font-size: 23px;
+        margin-top: 9px;
+        margin-bottom: 9px;
+    }
+
     .home-template .home-footer {
         position: absolute;
         bottom: 6%;
@@ -143,8 +158,8 @@
         justify-content: center;
     }
 
-    .home-template .menu-item {
-        height: 25px;
+    .home-template .home-nav .menu-item {
+        height: 15px;
         font-size: 12px;
         font-weight: 400;
         padding-left: 10px;
