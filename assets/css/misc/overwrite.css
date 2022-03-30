@@ -1,0 +1,25 @@
+.post .post-footer {
+    position: relative;
+}
+
+.post .post-footer::before {
+    font-family: 'FontAwesome';
+    content: "\f030";
+    left: 50%;
+    position: absolute;
+    bottom: 0;
+    opacity: 0.8;
+    font-size: 12px;
+}
+
+.post .post-footer .post-action, .post-author {
+    display: none;
+}
+
+.post .medium .author {
+    display: none;
+}
+
+.post .post-media {
+    max-width: calc(750px + 8vw);
+}
