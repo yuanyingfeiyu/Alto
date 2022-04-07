@@ -55,6 +55,10 @@
             "home_cover_image5": {
                 "type": "image"
             },
+	    "slide_delay": {
+		"type": "text",
+		"default": "5000"
+	    },
             "main_title": {
                 "type": "text",
                 "default": "The Adventure Stroies of"

@@ -1,3 +1,7 @@
+img[src=''] {
+    visibility: hidden;
+}
+
 .home-template {
     background-color: rgb(40 44 53);
 }
