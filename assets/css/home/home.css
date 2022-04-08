@@ -65,7 +65,7 @@ img[src=''] {
     margin-bottom: 5px;
     height: 30px;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: bold;
     padding-left: 10px;
     padding-right: 10px;
     font-family: 'Mulish', sans-serif;
@@ -131,6 +131,7 @@ img[src=''] {
 
     .home-nav .nav-list .menu-item {
         font-size: 23px;
+        font-weight: 400;
         margin-top: 9px;
         margin-bottom: 9px;
     }
