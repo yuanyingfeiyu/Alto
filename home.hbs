@@ -28,16 +28,18 @@
         <div class="home-top-logo">
             <img class="home-logo-image x" src="{{img_url @custom.white_logo_for_dark_mode}}" alt="{{@site.title}}">
         </div>
-        <div class="home-content">
-            <div class="home-title">
-                <div class="main-title"><h1>{{@custom.main_title}}</h1></div>
-                <div class="sub-title"><h2>{{@custom.sub_title}}</h2></div>
-            </div>
+        <div class="home-content-wrapper">
+            <div class="home-content">
+                <div class="home-title">
+                    <div class="main-title"><h1>{{@custom.main_title}}</h1></div>
+                    <div class="sub-title"><h2>{{@custom.sub_title}}</h2></div>
+                </div>
 
-            <div class="home-nav">
-            {{#if @site.navigation}}
-                {{navigation}}
-            {{/if}}
+                <div class="home-nav">
+                {{#if @site.navigation}}
+                    {{navigation}}
+                {{/if}}
+                </div>
             </div>
         </div>
     </div>
