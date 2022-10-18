@@ -2,8 +2,9 @@
     "name": "alto",
     "description": "A Ghost theme",
     "version": "1.0.0",
+    "private": true,
     "engines": {
-        "ghost": ">=4.0.0"
+        "ghost": ">=5.0.0"
     },
     "license": "MIT",
     "author": {
@@ -55,10 +56,10 @@
             "home_cover_image5": {
                 "type": "image"
             },
-	    "slide_delay": {
-		"type": "text",
-		"default": "5000"
-	    },
+	        "slide_delay": {
+		        "type": "text",
+		        "default": "5000"
+	        },
             "main_title": {
                 "type": "text",
                 "default": "The Adventure Stroies of"
@@ -69,12 +70,18 @@
             },
             "title_font": {
                 "type": "select",
-                "options": ["Modern sans-serif", "Elegant serif"],
+                "options": [
+                    "Modern sans-serif",
+                    "Elegant serif"
+                ],
                 "default": "Modern sans-serif"
             },
             "body_font": {
                 "type": "select",
-                "options": ["Modern sans-serif", "Elegant serif"],
+                "options": [
+                    "Modern sans-serif",
+                    "Elegant serif"
+                ],
                 "default": "Modern sans-serif"
             },
             "white_logo_for_dark_mode": {
@@ -84,11 +91,6 @@
                 "type": "boolean",
                 "default": true,
                 "group": "homepage"
-            },
-            "show_share_links": {
-                "type": "boolean",
-                "default": true,
-                "group": "post"
             },
             "show_author": {
                 "type": "boolean",
@@ -105,21 +107,21 @@
     "scripts": {
         "dev": "gulp",
         "test": "gscan .",
-        "test:ci": "gscan --fatal --verbose .",
         "zip": "gulp zip"
     },
     "devDependencies": {
-        "autoprefixer": "10.4.4",
+        "@tryghost/shared-theme-assets": "1.2.0",
+        "autoprefixer": "10.4.12",
         "beeper": "2.1.0",
-        "cssnano": "5.1.7",
-        "gscan": "4.27.0",
+        "cssnano": "5.1.13",
+        "gscan": "4.34.0",
         "gulp": "4.0.2",
         "gulp-concat": "2.6.1",
         "gulp-livereload": "4.0.2",
         "gulp-postcss": "9.0.1",
         "gulp-uglify": "3.0.2",
         "gulp-zip": "5.1.0",
-        "postcss": "8.4.12",
+        "postcss": "8.4.18",
         "postcss-easy-import": "4.0.0",
         "pump": "3.0.0"
     }
